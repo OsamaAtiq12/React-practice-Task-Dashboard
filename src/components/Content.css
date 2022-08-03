@@ -1,0 +1,290 @@
+.Container{
+       
+    height: 700px;
+    width: 850px;
+    border-radius: 10px;
+    border-color: azure;
+    padding-top: 30px;
+padding-left: 30px;
+padding-right: 60px;
+background-color:#FFFFFF ;
+    
+   margin:auto;
+    
+    float: left;
+    margin-left: 350px;
+    position: relative;
+
+  
+    padding-bottom: 50px;
+    
+   
+    
+}
+
+.inner-container{
+
+    height: 300px;
+    width: 400px;
+   margin-bottom: -50px;
+ 
+   
+    
+}
+
+.Input-style{
+    height: 40px;
+    border-radius: 5px solid  #0096C7;
+    width: 300px;
+    font-size: 25px;
+    color: grey;
+    border-radius: 5px;
+    border-color: #0096C7;
+  
+}
+.issue-des{
+    margin-top: 30px;
+    padding-right: 40px;
+    position:absolute;
+    top:0;
+    right:0;
+    
+    
+    font-size: 15px;
+
+}
+.text-des{
+    resize: none;
+    border-radius: 10px;
+}
+
+P{
+    font-size: 28px;
+    font-weight: bold;
+}
+.Input-style2{
+    margin-top: 80px;
+    height: 40px;
+    border-radius: 5px solid  #0096C7;
+    width: 500px;
+    font-size: 25px;
+    color: grey;
+    border-radius: 5px;
+    border-color: #0096C7;
+    margin-left: -160px;
+
+
+}
+
+.attachment{
+    
+ 
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1%;
+ 
+   
+  
+}
+
+.btn-1{
+   
+    margin-top: 70px;
+    background-color: #0096C7;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px ;
+    border-color: #0096C7;
+    color: white;
+    text-decoration: none;
+   height: 50px;
+  padding-bottom: 10px;
+   margin-left: 10px;
+   padding-left: 5px;
+   padding-right: 5px;
+    
+}
+
+.btn-2{
+    
+    background-color: #E71D36;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px ;
+    border-color: #0096C7;
+    color: white;
+    text-decoration: none;
+   padding: 10px 70px;
+   position: absolute;
+   bottom: 8px;
+   right: 40%;
+   font-size: 18px;
+    
+}
+
+/* 
+@media only screen and (-width: 667px) {
+   .Container{
+    height: 400px;
+    width: 400px;
+   
+    margin-top: 50px;
+
+    
+   } 
+   .btn-2{
+
+ padding: 10px 20px;
+ margin-left: 20px;
+   }
+
+   .issue-des{
+   
+    width: 500px;
+    height: 500px;
+
+  margin-top: 40px;
+    
+    
+
+}
+h1{
+    font-size: 15px;
+}
+.Input-style{
+    height: 20px;
+   
+    width: 200px;
+    font-size: 15px;
+   
+    border-radius: 5px;
+    
+  
+}
+
+.Input-style2{
+    height: 20px;
+   
+    width: 200px;
+    font-size: 15px;
+   
+    border-radius: 5px;
+    margin-top: 100px;
+   margin-right: 100px;
+    
+ 
+
+}
+
+p{
+    font-size: 15px;
+}
+
+
+.btn-1{
+    margin-left: -50px;
+    margin-top: 90px;
+    padding: 5px 20px;
+    font-size: 10px;
+ 
+
+
+}
+
+.btn-2{
+    margin-top: 20px;
+    margin-left: -150px;
+    margin-bottom: 50px;
+    font-size: 10px;
+   
+}
+
+textarea {
+    width: 200px;
+    height: 150px;
+    margin-left: 300px;
+  }
+  .head-1{
+    margin-left: 300px;
+  }
+
+ 
+ 
+  } */
+/*   
+  @media only screen and (min-width: 768px) {
+
+.Container{
+   
+    margin-top: 100px;
+    margin-left: 200px;
+
+    width: 550px;
+
+    
+   } 
+
+
+   .Input-style2{
+   
+    margin-top: 120px;
+    margin-right: 100px;
+
+    
+ 
+
+}
+
+.btn-1{
+    margin-bottom: -80px;
+    
+   
+}
+textarea {
+    margin-top: 20px;
+   
+    margin-left: 350px;
+    width: 250px;
+    height: 200px;
+  }
+  .head-1{
+    margin-top: 10px;
+    margin-left: 350px;
+  }
+  
+  .issue-des{
+   
+    width: 600px;
+    height: 600px;
+
+  margin-top: 40px;
+    
+    
+
+}
+.btn-1{
+    margin-left: -120px;
+    padding: 1px 20px;
+    margin-top: 30px;
+ 
+
+
+}
+.Input-style2{
+    
+   margin-right: 150px;
+   height: 20px;
+   
+   width: 250px;
+ 
+
+}
+.btn-2{
+    
+    margin-left: -200px;
+    padding: 1px 20px;
+   
+}
+
+  } */
+

@@ -1,0 +1,70 @@
+
+
+.item-area{
+  margin-left: 30px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly
+    
+   
+    
+     
+
+}
+.item-area:hover{
+    background-color: #0096C7;
+    color: white;
+    
+}
+
+.item{
+
+    color: #0096C7;
+    font-size: 16px;
+  
+   
+   
+}
+
+.item-area:hover .item   {
+    color: white;
+}
+
+.icon2{
+
+    height: 25px;
+    width: 25px;
+    color: #0096C7;
+   
+    
+}
+
+.item-area:hover .icon2{
+    color: white;
+}
+
+/* 
+@media only screen and (max-width: 896px) {
+    .sidenav {
+        height: 32%;
+        width: 10%;
+    }
+    .icon1{
+        margin-right: 30px;
+    }
+    .item-area{
+        margin-left: -50px;
+    }
+  }
+
+  @media only screen and (max-width: 667px) {
+   
+    .item-area{
+        margin-left: -50px;
+    }
+   
+  } */
