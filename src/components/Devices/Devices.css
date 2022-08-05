@@ -1,0 +1,75 @@
+.Container{
+       display: flex;
+       justify-content: space-around;
+       flex-wrap: wrap;
+    height: 850px;
+    width: 850px;
+    border-radius: 10px;
+    border-color: azure;
+    
+padding-left: 30px;
+padding-right: 30px;
+background-color:#FFFFFF ;
+   
+   margin:auto;
+    
+  
+    margin-left: 380px;
+    
+
+  margin-top: -80px;
+
+   
+    
+}
+
+
+  .button-container{
+    display: flex;
+    
+    justify-content: flex-end;
+    margin-right: 100px;
+    
+   
+   margin-bottom: 30px;
+
+  }
+
+
+  .Input-style{
+  
+   width: 300px;
+   height: 40px;
+  margin-right:10px;
+  border-radius: 15px;
+  border-color: #0096C7;
+ 
+  
+}
+
+ .D-g{
+    margin-top: 30px;
+    margin-left: 22%;
+    color: #0096C7;
+
+ }
+
+ .btn{
+ background-color: #0096C7;
+ border-radius: 10px;
+ border-color: #0096C7;
+ color: #FFFFFF;
+ }
+
+ .icon{
+ 
+   position: absolute;
+   right: 270px;
+   top: 100px;
+  color: #0096C7;
+  
+ }
+
+ .Search-container{
+    position: relative;
+ }

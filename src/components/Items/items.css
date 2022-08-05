@@ -39,8 +39,9 @@
     height: 25px;
     width: 25px;
     color: #0096C7;
-   
-    
+    margin-top: 10px;
+  
+    font-size: 20px;
 }
 
 .item-area:hover .icon2{
@@ -68,3 +69,8 @@
     }
    
   } */
+
+  .Link{
+    text-decoration: none;
+    
+  }

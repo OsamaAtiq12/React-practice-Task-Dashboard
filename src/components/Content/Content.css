@@ -1,4 +1,4 @@
-.Container{
+.Container-c{
        
     height: 700px;
     width: 850px;
@@ -17,12 +17,12 @@ background-color:#FFFFFF ;
 
   
     padding-bottom: 50px;
-    
    
+   margin-top: 10px;
     
 }
 
-.inner-container{
+.inner-container-c{
 
     height: 300px;
     width: 400px;
@@ -32,7 +32,7 @@ background-color:#FFFFFF ;
     
 }
 
-.Input-style{
+.Input-style-c{
     height: 40px;
     border-radius: 5px solid  #0096C7;
     width: 300px;
@@ -42,7 +42,7 @@ background-color:#FFFFFF ;
     border-color: #0096C7;
   
 }
-.issue-des{
+.issue-des-c{
     margin-top: 30px;
     padding-right: 40px;
     position:absolute;
@@ -53,7 +53,7 @@ background-color:#FFFFFF ;
     font-size: 15px;
 
 }
-.text-des{
+.text-des-c{
     resize: none;
     border-radius: 10px;
 }
@@ -62,7 +62,7 @@ P{
     font-size: 28px;
     font-weight: bold;
 }
-.Input-style2{
+.Input-style2-c{
     margin-top: 80px;
     height: 40px;
     border-radius: 5px solid  #0096C7;
@@ -76,7 +76,7 @@ P{
 
 }
 
-.attachment{
+.attachment-c{
     
  
     display: flex;
@@ -87,7 +87,7 @@ P{
   
 }
 
-.btn-1{
+.btn-1-c{
    
     margin-top: 70px;
     background-color: #0096C7;
@@ -105,7 +105,7 @@ P{
     
 }
 
-.btn-2{
+.btn-2-c{
     
     background-color: #E71D36;
     font-weight: bold;
@@ -120,6 +120,13 @@ P{
    right: 40%;
    font-size: 18px;
     
+}
+
+
+.Re-issue{
+   
+    color: #0096C7;
+    margin-left: 400px;
 }
 
 /* 

@@ -1,0 +1,19 @@
+.Cards{
+    width: 400px;
+    height: 400px;
+           margin: 10px;
+    background-color: #F8F9FA;
+    border-radius: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
+}
+
+
+
+.hr1{
+    width: 100%;
+   
+   border-color:  #0096C7;
+   
+  
+}

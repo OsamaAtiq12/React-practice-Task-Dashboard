@@ -1,12 +1,13 @@
 import React from "react";
-import Main_page from "./components/Main_page";
-import Sidebar from "./components/Sidebar";
+
+import { BrowserRouter } from "react-router-dom";
 import ReactDOM from "react-dom";
-import Items from "./components/Items";
-import Content from "./components/Content";
+import Myroutes from "./components/Myroutes";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Main_page />
+    <BrowserRouter>
+      <Myroutes />
+    </BrowserRouter>
   </React.StrictMode>
 );

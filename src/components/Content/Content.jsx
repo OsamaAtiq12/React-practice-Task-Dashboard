@@ -1,15 +1,18 @@
 import React from "react";
 import "./Content.css";
+import Main_page from "../Main_page/Main_page";
 
 function Content() {
   return (
     <>
-      <div className="Container">
-        <div className="inner-container">
+      <Main_page />
+      <h1 className="Re-issue">Report Issue</h1>
+      <div className="Container-c">
+        <div className="inner-container-c">
           <p>Select Workflow</p>
           <select
             name="cars"
-            className="Input-style"
+            className="Input-style-c"
             id="cars"
             placeholder="Select Devices"
           >
@@ -18,7 +21,7 @@ function Content() {
           <p>Select Gateway</p>
           <select
             name="cars"
-            className="Input-style"
+            className="Input-style-c"
             id="cars"
             placeholder="Select Devices"
           >
@@ -27,7 +30,7 @@ function Content() {
           <p>Select Devices</p>
           <select
             name="cars"
-            className="Input-style "
+            className="Input-style-c "
             id="cars"
             placeholder="Select Devices"
           >
@@ -35,22 +38,22 @@ function Content() {
           </select>
           <br />
 
-          <div className="attachment">
+          <div className="attachment-c">
             <p className="at">Attachments</p>
             <input
               placeholder="No file Chosen"
-              className="Input-style2"
+              className="Input-style2-c"
               classtype="text"
             />
 
-            <a href="" className="btn-1">
+            <a href="" className="btn-1-c">
               <pre className="ch">Choose File</pre>
             </a>
           </div>
         </div>
 
-        <div className="issue-des">
-          <h1 className="head-1">Issue Description</h1>
+        <div className="issue-des-c">
+          <h1 className="head-1-c">Issue Description</h1>
           <textarea
             placeholder="Type here..."
             className="text-des"
@@ -60,8 +63,8 @@ function Content() {
             rows="20"
           ></textarea>
         </div>
-        <a href="" className="btn-2">
-          <pre className="ch">Report Issue</pre>
+        <a href="" className="btn-2-c">
+          <pre className="ch-c">Report Issue</pre>
         </a>
       </div>
     </>

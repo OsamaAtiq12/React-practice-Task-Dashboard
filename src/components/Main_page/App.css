@@ -95,3 +95,10 @@ body{
     margin-left: 100px;
     color: grey;
    }
+
+   .item-align{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+   }
