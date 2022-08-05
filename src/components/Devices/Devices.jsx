@@ -5,42 +5,74 @@ import { Icon } from "@iconify/react";
 import Main_page from "../Main_page/Main_page";
 
 function Content() {
-  let data = [
+  const [data, setData] = React.useState("");
+
+  const cards = [
     {
+      Heading: "M1 Display Gateway",
       name: "Brent-EP1",
-    },
-    {
-      name: "(CBC839AC8FF44619AC4B19FE5A61A690)",
-    },
-
-    {
-      name: "(CBC839AC8FF44619AC4B19FE5A61A690)",
+      id1: "(CBC839AC8FF44619AC4B19FE5A61A611)",
+      id2: "(CBC839AC8FF44619AC4B19FE5A61A691)",
+      pole: "Pole-1",
     },
 
     {
-      name: "Brent-EP3",
-    },
-    {
-      name: "(CBC839AC8FF44619AC4B19FE5A61A690)",
-    },
-    {
-      name: "(CBC839AC8FF44619AC4B19FE5A61A690)",
-    },
-    {
-      name: "Pole",
-    },
-    {
+      Heading: "M2 Display Gateway",
       name: "Brent-EP2",
+      id1: "(CBC839AC8FF44619AC4B19FE5A61A622)",
+      id2: "(CBC839AC8FF44619AC4B19FE5A61A692)",
+      pole: "Pole-2",
+    },
+
+    {
+      Heading: "M3 Display Gateway",
+      name: "Brent-EP3",
+      id1: "(CBC839AC8FF44619AC4B19FE5A61A633)",
+      id2: "(CBC839AC8FF44619AC4B19FE5A61A693)",
+      pole: "Pole-3",
+    },
+    {
+      Heading: "M4 Display Gateway",
+      name: "Brent-EP4",
+      id1: "(CBC839AC8FF44619AC4B19FE5A61A644)",
+      id2: "(CBC839AC8FF44619AC4B19FE5A61A694)",
+      pole: "Pole-4",
     },
   ];
-  const itemsre = data.map((value, index) => {
+
+  const itemsre = cards.map((value, index) => {
     return (
       <div key={index}>
-        <li>{value.name}</li>
+        <Cards
+          heading={value.Heading}
+          name={value.name}
+          id1={value.id1}
+          id2={value.id2}
+          pole={value.pole}
+        />
         <br />
       </div>
     );
   });
+
+  const SearchItems = (searchValue) => {
+    const Filtereddata = cards.filter((item) => {
+      if (searchValue === "") {
+        return;
+      }
+      if (
+        item.Heading.toLowerCase().includes(searchValue.toLowerCase()) ||
+        item.name.toLowerCase().includes(searchValue.toLowerCase()) ||
+        item.id1.toLowerCase().includes(searchValue.toLowerCase()) ||
+        item.id2.toLowerCase().includes(searchValue.toLowerCase()) ||
+        item.pole.toLowerCase().includes(searchValue.toLowerCase())
+      ) {
+        return item;
+      }
+    });
+    console.log(Filtereddata);
+  };
+
   return (
     <>
       <Main_page />
@@ -49,18 +81,19 @@ function Content() {
       </div>
       <div className="button-container">
         <div className="Search">
-          <input className="Input-style" />
-          <Icon className="icon" icon="flat-color-icons:search" />
+          <form action="">
+            <input
+              onChange={(e) => SearchItems(e.target.value)}
+              className="Input-style"
+            />
+
+            <Icon className="icon" icon="flat-color-icons:search" />
+          </form>
         </div>
 
         <button className="btn"> + Create New Group</button>
       </div>
-      <div className="Container">
-        <Cards data={itemsre} />
-        <Cards data={itemsre} />
-        <Cards data={itemsre} />
-        <Cards data={itemsre} />
-      </div>
+      <div className="Container">{itemsre}</div>
     </>
   );
 }

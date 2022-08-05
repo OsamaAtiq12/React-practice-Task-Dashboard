@@ -51,7 +51,7 @@ const Main_page = () => {
 
   return (
     <>
-      <div class="sidenav">
+      <div className="sidenav">
         <div className="heading">
           <pre className="name"> Syed Talha Hassan</pre>
 
