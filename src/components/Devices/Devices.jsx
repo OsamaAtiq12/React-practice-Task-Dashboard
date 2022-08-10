@@ -5,7 +5,11 @@ import { Icon } from "@iconify/react";
 import Main_page from "../Main_page/Main_page";
 
 function Content() {
-  const [data, setData] = React.useState("");
+  const [search, setNewSearch] = React.useState("");
+
+  const handleSearchChange = (e) => {
+    setNewSearch(e.target.value);
+  };
 
   const cards = [
     {
@@ -40,7 +44,18 @@ function Content() {
     },
   ];
 
-  const itemsre = cards.map((value, index) => {
+  const filtered = !search
+    ? cards
+    : cards.filter(
+        (item) =>
+          item.Heading.toLowerCase().includes(search.toLowerCase()) ||
+          item.name.toLowerCase().includes(search.toLowerCase()) ||
+          item.id1.toLowerCase().includes(search.toLowerCase()) ||
+          item.id2.toLowerCase().includes(search.toLowerCase()) ||
+          item.pole.toLowerCase().includes(search.toLowerCase())
+      );
+
+  const itemsre = filtered.map((value, index) => {
     return (
       <div key={index}>
         <Cards
@@ -54,25 +69,6 @@ function Content() {
       </div>
     );
   });
-
-  const SearchItems = (searchValue) => {
-    const Filtereddata = cards.filter((item) => {
-      if (searchValue === "") {
-        return;
-      }
-      if (
-        item.Heading.toLowerCase().includes(searchValue.toLowerCase()) ||
-        item.name.toLowerCase().includes(searchValue.toLowerCase()) ||
-        item.id1.toLowerCase().includes(searchValue.toLowerCase()) ||
-        item.id2.toLowerCase().includes(searchValue.toLowerCase()) ||
-        item.pole.toLowerCase().includes(searchValue.toLowerCase())
-      ) {
-        return item;
-      }
-    });
-    console.log(Filtereddata);
-  };
-
   return (
     <>
       <Main_page />
@@ -82,10 +78,7 @@ function Content() {
       <div className="button-container">
         <div className="Search">
           <form action="">
-            <input
-              onChange={(e) => SearchItems(e.target.value)}
-              className="Input-style"
-            />
+            <input onChange={handleSearchChange} className="Input-style" />
 
             <Icon className="icon" icon="flat-color-icons:search" />
           </form>
